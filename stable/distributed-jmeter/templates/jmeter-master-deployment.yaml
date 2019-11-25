@@ -32,3 +32,5 @@ spec:
             - master
           ports:
             - containerPort: 60000
+      nodeSelector:
+        beta.kubernetes.io/os: {{ .Values.nodeSelectorOS }}

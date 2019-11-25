@@ -32,3 +32,5 @@ spec:
           ports:
             - containerPort: 50000
             - containerPort: 1099
+      nodeSelector:
+        beta.kubernetes.io/os: {{ .Values.nodeSelectorOS }}
